@@ -1,39 +1,38 @@
-# OrangeHRM Automation Framework
-flairsTech-assessment
+# OrangeHRM Automation Framework  
+FlairsTech Assessment Project
 
-## 📋 Project Description
+## Project Description
+This project automates core functionalities of the [OrangeHRM Demo Site](https://opensource-demo.orangehrmlive.com/) using Selenium WebDriver, Cucumber (BDD), TestNG, and the Page Object Model (POM) design pattern.  
+It also includes API automation examples using Rest Assured for candidate creation and deletion.
 
-This project automates core functionalities of the [OrangeHRM demo site](https://opensource-demo.orangehrmlive.com/) using **Selenium**, **Cucumber (BDD)**, **TestNG**, and the **Page Object Model (POM)** design pattern.  
-It covers UI-based creation and deletion of user records, and includes basic REST Assured structure for API automation (commented due to demo site limitations).
-NOTE: OrangeHRM public demo site does not allow API testing. Only UI automation is possible.
+Important Note:  
+The OrangeHRM public demo site does not fully support API authentication or protected API actions. Therefore, the API automation leverages session cookies obtained after UI login.
 
----
+## Technology Stack
 
-## 🛠 Tech Stack
+- Java 21
+- Selenium WebDriver
+- Cucumber (Gherkin BDD)
+- TestNG
+- Maven (Build Management)
+- Rest Assured (API Automation)
+- Page Object Model (Design Pattern)
+- IntelliJ IDEA (IDE)
 
-- **Java** 21
-- **Selenium WebDriver**
-- **Cucumber** (Gherkin BDD)
-- **TestNG**
-- **Maven** (Build Management)
-- **Rest Assured** (API Testing - placeholder)
-- **Page Object Model** (Design Pattern)
-- **IntelliJ IDEA** (IDE)
-
----
-
-## 🚀 Features Automated
+## Features Automated
 
 - Login to OrangeHRM
-- Navigate to Admin section
-- Get number of user records
+- Navigate to the Admin section
+- Retrieve the number of user records
 - Add a new user
-- Validate that record count increased by 1
+- Validate that the record count increased by one
 - Search for the newly created user
 - Delete the user
-- Validate that record count decreased by 1
+- Validate that the record count decreased by one
+- Add a candidate using OrangeHRM API (session-based authentication)
+- Delete a candidate using OrangeHRM API (bulk delete)
 
----
+
 
 ## ⚡ Setup Instructions
 
@@ -45,7 +44,7 @@ git clone https://github.com/MuhamadAtef/orangehrm-automation.git
 
 2.  Using Maven command to run code
  
- ```bash
+```bash
 mvn clean test
 ```
 
